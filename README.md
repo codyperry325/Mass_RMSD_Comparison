@@ -4,8 +4,8 @@ A program to check the RMSD of predicted crystal structures against each other o
 NOTE: This will iterate over all cif files in a forward fashion:
 
 ```
-file1.cif vs file2.cif --- file(n).cif
-file2.cif vs file3.cif --- file(n).cif
+file1.cif vs file2.cif ---> file(n).cif
+file2.cif vs file3.cif ---> file(n).cif
 file(n-1).cif vs filen.cif
 ```
 
