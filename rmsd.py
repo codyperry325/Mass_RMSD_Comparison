@@ -26,7 +26,8 @@ def main():
     files = glob.glob("*.cif")
     for i in range(0,len(files)):
         print(f"Remaining Crystals in Sequence: {len(files)-i}")
-        for j in range(i+1,len(files)):
+        for j in range(i+1,len(files)):            
+            #print(f"Remaining Comparisons against {i}: {len(files)-j}") # Uncomment this line if you want to watch the number of j left
             rmsd,file1,file2 = rmsd_grab(files,i,j)
             write_output(file1,file2,rmsd)
     
