@@ -9,7 +9,7 @@ file2.cif vs file3.cif ---> file(n).cif
 file(n-1).cif vs filen.cif
 ```
 
-Remaining crystals value reports the crystal it is currently comparing against the rest. If there are alof of cif files in the folder, this process could take a long time to iterate through but should not need any monitoring! 
+Remaining crystals value reports the crystal it is currently comparing against the rest. If there are alof of cif files in the folder, this process could take a long time to iterate through but should not need any monitoring! Uncomment the print line in the [for j] loop to see more detailed progress.
 
 To ensure compatibility, verions of ASE and CCDC are:
 ```
